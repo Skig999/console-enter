@@ -1,0 +1,60 @@
+//Вывод в консоль
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // S1.1. Вывести число с точностью до сотых
+        Console.WriteLine("{0:F2}", 3.14159);
+
+        // S1.2. Вывести число e с точностью до десятых
+        Console.WriteLine("{0:F1}", Math.E);   //{0} — это (заполнитель), :F1 —  означает формат с фиксированной точкой, а цифра 1 после неё задаёт точность — 1 знак после запятой, 
+                                               //Math.E — это статическое поле класса Math, которое содержит точное значение числа e 
+
+        // S1.3. Вывод введённого числа с сообщением "Вы ввели число"
+        Console.Write("Введите число: ");
+        double n3 = double.Parse(Console.ReadLine());
+        Console.WriteLine("Вы ввели число " + n3);
+
+        // S1.4. Вывод числа с сообщением после него
+        Console.Write("Введите число: ");
+        double n4 = double.Parse(Console.ReadLine());    //double.Parse - метод для преобразования строкового представления числа
+        Console.WriteLine(n4 + " --- вот какое число Вы ввели");
+
+        // S1.5. Числа 1, 13 и 49 с одним пробелом
+        Console.WriteLine("1 13 49");
+
+        // S1.6. Числа 7, 15 и 100 с двумя пробелами
+        Console.WriteLine("7  15  100");
+
+        // S1.7. Три любых числа с двумя пробелами
+        Console.WriteLine("2  5  8");
+
+        // S1.8. Четыре любых числа с одним пробелом
+        Console.WriteLine("3 6 9 12");
+
+        // S1.9. Числа 50 и 10 одно под другим
+        Console.WriteLine(50);
+        Console.WriteLine(10);
+
+        // S1.10. Числа 5, 10 и 21 одно под другим
+        Console.WriteLine(5);
+        Console.WriteLine(10);
+        Console.WriteLine(21);
+
+        // S1.11. Четыре любых числа столбиком
+        Console.WriteLine(1);
+        Console.WriteLine(2);
+        Console.WriteLine(3);
+        Console.WriteLine(4);
+
+        // S1.12. Информация: 5 10 / 7 см
+        Console.WriteLine("5 10");
+        Console.WriteLine("7 см");
+
+        // S1.13. Информация: 2 кг / 13 17
+        Console.WriteLine("2 кг");
+        Console.WriteLine("13 17");
+    }
+}
